@@ -51,13 +51,22 @@
 | 2.8 | ℝⁿ 的子空间、列空间 Col A 与零空间 Nul A、基的概念 | 定理 12：Nul A ⊆ ℝⁿ、Col A ⊆ ℝᵐ 都是子空间；Ax = **b** 相容 ⟺ **b** ∈ Col A；定理 13：A 的**主元列**构成 Col A 的基（Nul A 的基取自参数向量形式） |
 | 2.9 | 坐标向量 [x]ʙ、维数、秩 rank A、基定理 | 定理 14（秩定理）：rank A + dim Nul A = n；定理 15（基定理）：p 维子空间中任意 p 个无关向量即为一组基，任意 p 个张成向量亦然 |
 
+### 第 3 章　行列式
+
+| 节 | 核心内容 | 关键结论 / 定理 |
+|:---:|---|---|
+| 3.1 | 余子式 Mᵢⱼ 与代数余子式 Cᵢⱼ = (−1)ⁱ⁺ʲMᵢⱼ、代数余因子展开求 det | 定理 1：可沿**任一行或列**展开；定理 2：三角矩阵 det = 对角元之积；计算策略选 **0 最多的行 / 列**展开 |
+| 3.2 | 行列式的性质：三类初等行（列）变换的作用、行化简求 det、可逆性判据、乘法性质、对单个列的线性性质 | 定理 3：行交换变号 / 倍乘乘 k / 倍加不变；det A = (−1)ʳ × 主元之积；定理 4：A 可逆 ⟺ det A ≠ 0；定理 5：det Aᵀ = det A（⇒ 对列同样成立）；定理 6：det AB = (det A)(det B)，推论 det A⁻¹ = 1/det A、det(rA) = rⁿ det A；固定其余列时 T(**x**) = det[⋯ **x** ⋯] 是 ℝⁿ → ℝ 的**线性变换**（T(c**x**) = cT(**x**)、T(**u**+**v**) = T(**u**) + T(**v**)，对每个列分别线性），但 det(A+B) ≠ det A + det B |
+| 3.3 | 克拉默法则、伴随矩阵 adj A 与逆矩阵公式、行列式的几何意义（面积 / 体积） | 定理 7（Cramer）：xᵢ = det Aᵢ(**b**) / det A；定理 8：A⁻¹ = (1/det A)·adj A；定理 9：\|det\| = 列张成的平行四边形面积（2×2）/ 平行六面体体积（3×3）；定理 10：线性变换按 \|det A\| 缩放一切面积 / 体积 |
+
+
 ## 📊 学习进度
 
 | 章节 | 主题 | 笔记 | 状态 |
 |:---:|---|:---:|:---:|
 | 1 | 线性代数中的线性方程 *Linear Equations in Linear Algebra* | [chapter1.ipynb](chapter1.ipynb) | ✅ 2026-09-26 |
 | 2 | 矩阵代数 *Matrix Algebra* | [chapter2.ipynb](chapter2.ipynb) | ✅ 2026-10-17 |
-| 3 | 行列式 *Determinants* | — | ⏳ |
+| 3 | 行列式 *Determinants* | [chapter3.ipynb](chapter3.ipynb) | ✅ 2026-10-26 |
 | 4 | 向量空间 *Vector Spaces* | — | ⏳ |
 | 5 | 特征值与特征向量 *Eigenvalues and Eigenvectors* | — | ⏳ |
 | 6 | 正交性与最小二乘 *Orthogonality and Least Squares* | — | ⏳ |
